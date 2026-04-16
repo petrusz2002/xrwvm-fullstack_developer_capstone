@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Best Cars</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            height: 80px;
+        }
+
+        .contact-container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 60px 40px;
+            color: white;
+            border-radius: 5px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('/static/cars.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .contact-section {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+            align-items: stretch;
+        }
+
+        .contact-card {
+            flex: 1;
+            padding: 30px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .contact-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+        }
+
+        .contact-title {
+            font-weight: bold;
+            color: #17a2b8;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+
+        .btn-custom {
+            background-color: #17a2b8;
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #138496;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container-fluid">
+        <h2 class="text-white me-4">Best Cars</h2>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-dark fw-bold" href="/contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="contact-container">
+
+    <div class="banner">
+        <h1>Contact Best Cars</h1>
+        <p>
+            Find your next car with confidence. Reach out to our team — we're here to help every step of the way.
+        </p>
+    </div>
+
+    <div class="contact-section">
+
+        <!-- LEFT: CONTACT INFO -->
+        <div class="contact-card">
+            <h3 class="mb-4">Get in Touch</h3>
+
+            <div class="contact-item">
+                <span class="contact-title">Address:</span><br>
+                1234 Auto Drive, Suite 200<br>
+                Detroit, MI 48201, USA
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-title">Phone:</span><br>
+                +1 (313) 555-7890
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-title">Email:</span><br>
+                support@bestcars.com
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-title">Business Hours:</span><br>
+                Mon – Fri: 9:00 AM – 7:00 PM<br>
+                Sat: 10:00 AM – 5:00 PM<br>
+                Sun: Closed
+            </div>
+        </div>
+
+        <!-- RIGHT: IMAGE -->
+        <div class="contact-image">
+            <img src="/static/contactus.png" alt="Contact us">
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
